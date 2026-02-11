@@ -1,0 +1,234 @@
+.results-display {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results-header h2 {
+    margin: 0 0 2rem 0;
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.grade-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.grade-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.grade-label {
+    font-size: 0.9rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.grade-value {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.percentage {
+    font-size: 1.5rem;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.scores-section {
+    margin-bottom: 2rem;
+}
+
+.scores-section h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.3rem;
+    color: #e0e0e0;
+}
+
+.score-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.score-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.score-item.final {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.score-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.score-name {
+    font-weight: 600;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.score-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.progress-bar {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-out;
+    animation: fillAnimation 1s ease-out;
+}
+
+@keyframes fillAnimation {
+    from {
+        width: 0;
+    }
+}
+
+.progress-fill.rubric {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.progress-fill.semantic {
+    background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+}
+
+.progress-fill.nli {
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.progress-fill.final {
+    background: linear-gradient(90deg, #ffd700 0%, #ffed4e 100%);
+}
+
+.score-label-text {
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+}
+
+.rubric-analysis {
+    margin-bottom: 2rem;
+}
+
+.rubric-analysis h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.3rem;
+    color: #e0e0e0;
+}
+
+.concept-group {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.concept-group.covered {
+    border-left: 4px solid #4ade80;
+}
+
+.concept-group.partial {
+    border-left: 4px solid #fbbf24;
+}
+
+.concept-group.missing {
+    border-left: 4px solid #f87171;
+}
+
+.concept-header {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+.concept-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.concept-tag {
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.feedback-section {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.feedback-section h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+    color: #e0e0e0;
+}
+
+.feedback-content {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.feedback-content p {
+    margin: 0.5rem 0;
+}
+
+.feedback-content p:first-child {
+    margin-top: 0;
+}
+
+.feedback-content p:last-child {
+    margin-bottom: 0;
+}

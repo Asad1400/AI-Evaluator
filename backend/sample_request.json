@@ -1,0 +1,12 @@
+{
+  "question": "Explain the concept of machine learning and its applications in modern technology.",
+  "rubrics": [
+    "Definition of machine learning",
+    "Types of machine learning (supervised, unsupervised, reinforcement)",
+    "Real-world applications",
+    "Examples with explanation"
+  ],
+  "correct_answer": "Machine learning is a subset of artificial intelligence that enables computer systems to learn and improve from experience without being explicitly programmed. There are three main types of machine learning: supervised learning, where the algorithm learns from labeled training data; unsupervised learning, where the algorithm finds patterns in unlabeled data; and reinforcement learning, where the algorithm learns through trial and error by receiving rewards or penalties. Machine learning has numerous real-world applications including recommendation systems (like Netflix and Spotify), image recognition (facial recognition, medical imaging), natural language processing (chatbots, language translation), autonomous vehicles, fraud detection in banking, and predictive analytics in healthcare.",
+  "student_answer": "Machine learning allows computers to learn from data without being explicitly programmed. It includes supervised learning where we use labeled data, and unsupervised learning where we find patterns. Examples include Netflix recommendations which suggest movies based on viewing history, and face recognition in smartphones which can identify people in photos.",
+  "total_marks": 10.0
+}
